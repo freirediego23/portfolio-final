@@ -1,0 +1,267 @@
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+body {
+
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  text-align: center;
+  
+}
+
+*{transition: all 250ms ease;}
+
+.cursive {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+}
+
+.color1  {
+  background-color: #a7c5eb;
+  
+}
+
+.home-name {
+  font-size: 150px;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #a7c5eb;
+  border-radius: 5%;
+  color: initial;
+  text-decoration: none;
+  transition: .5s linear;
+  padding: 15px 15px 15px 15px;
+  animation: 4.5s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+a.button:hover{
+  color: white;
+  background-color: #1687a7;
+}
+
+
+
+.top-container {
+  background-color: #a7c5eb;
+  padding-top: 100px;
+  position: relative;
+}
+
+#top-cloud {
+  position: absolute;
+  right: 17%;
+  top: 50px;
+}
+
+#bot-cloud {
+  position: absolute;
+  left: 17%;
+  bottom: 300px;
+  
+}
+
+#mountain {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+h1 {
+  color: #413c69;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  line-height: 2;
+
+}
+
+h2 {
+  color: #413c69;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  line-height: 2;
+}
+
+.custom-font{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*FORM SECTION CONFIGURATION ******************/
+
+#designs {
+  padding-top: 80px;
+}
+
+.form-main-cont {
+  margin-top: 80px;
+}
+
+#alert {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.submit2 {
+  border: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.submit2:hover {
+  opacity: 0.6;
+}
+
+input, textarea {
+  
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+#formh2 {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-img-cont img {
+  height: 460px; /*Testing some dimensions for the image */
+  width: 810px;
+  margin-top: -60px;
+  overflow: hidden;
+  
+}
+
+.form-input-cont {
+  padding-left: 30px;
+  text-align: left;
+}
+
+
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar{display: none;}
+
+.custom-img {
+  object-fit: cover;
+}
+
+.menu2 {
+  overflow: hidden;
+}
+
+/**********************************************/
+
+/*Breakpoints */
+
+@media screen and (max-width: 640px) {
+  #bot-cloud, #top-cloud {display: none;}
+  
+  a{
+    padding-right: 0;
+  }
+  
+  .custom-img {
+    
+    object-fit: cover;
+  }
+
+  .blind{display: none;}
+
+  .navbar{
+    display: flex;
+    background-color: #a7c5eb;
+  }
+
+  .top-container {
+    padding-top: 50px;
+  }
+
+
+}
